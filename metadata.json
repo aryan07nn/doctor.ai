@@ -1,0 +1,7 @@
+{
+  "name": "doctor.ai",
+  "description": "A high-performance AI assistant with medical precision, featuring real-time search, image generation, video creation, and live voice interactions.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
