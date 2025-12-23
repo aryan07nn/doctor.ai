@@ -1,7 +1,10 @@
+
 {
-  "name": "doctor.ai",
-  "description": "A high-performance AI assistant with medical precision, featuring real-time search, image generation, video creation, and live voice interactions.",
+  "name": "Doctor.AI",
+  "description": "The ultimate gaming and entertainment suite powered by Gemini Pro, featuring Master Strategist tactics, High-Speed processing, and Cinematic World-Building.",
   "requestFramePermissions": [
-    "microphone"
+    "camera",
+    "microphone",
+    "geolocation"
   ]
 }

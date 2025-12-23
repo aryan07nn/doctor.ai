@@ -1,28 +1,26 @@
 
-export enum AppTab {
+export enum AppView {
   CHAT = 'chat',
-  MAPS = 'maps',
-  IMAGES = 'images',
-  VIDEO = 'video',
-  VOICE = 'voice',
-  GAME_TIPS = 'game_tips'
+  IMAGE_STUDIO = 'image_studio',
+  VIDEO_STUDIO = 'video_studio',
+  LIVE_VOICE = 'live_voice',
+  ANALYSIS = 'analysis',
+  MAPS_SEARCH = 'maps_search'
+}
+
+export interface Player {
+  id: string;
+  name: string;
+  ability: string;
+  avatar: string;
+  level: number;
+  voice: 'Kore' | 'Puck' | 'Zephyr';
 }
 
 export interface Message {
+  id: string;
   role: 'user' | 'assistant';
   content: string;
-  timestamp: number;
-  groundingUrls?: { uri: string; title: string }[];
-}
-
-export interface GeneratedImage {
-  url: string;
-  prompt: string;
-  timestamp: number;
-}
-
-export interface GeneratedVideo {
-  url: string;
-  prompt: string;
-  timestamp: number;
+  type?: 'text' | 'image' | 'video';
+  metadata?: any;
 }
